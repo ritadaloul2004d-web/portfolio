@@ -18,7 +18,7 @@ Webbaserad studie- och produktivitetsapplikation utvecklad i React.
 
 Projektet genomfördes inom kursen Interaction Programming and the Dynamic Web (betyg A).
 
- unktioner
+Funktioner
 - Uppgiftshantering med prioritering
 - Veckoplanering
 - Google Calendar-integration
