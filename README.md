@@ -38,7 +38,6 @@ Teknik
 Min roll
 - Utvecklade komponentbaserad frontend
 - Implementerade API-integrationer
-- Arbetade med autentisering och datalagring
 - Deltog i kodgranskning och gemensam versionshantering
 - Testning och felsökning
 
