@@ -43,12 +43,12 @@ Min roll
 ### Exempel från projektet
 ![Inloggning](cozyfocus/Inloggning.png)
 ![Home](cozyfocus/Home.png)
-![Task board](cozyfocus/Task board.png)
+![Task board](cozyfocus/Task_board.png)
 
-![Study plan](cozyfocus/Study plan.png)
-![Google Kalender](cozyfocus/Google Kalender.png)
-![Study spots](cozyfocus/Study spots.png)
-![Study Coach](cozyfocus/Study Coach.png)
+![Study plan](cozyfocus/Study_plan.png)
+![Google Kalender](cozyfocus/Google_Kalender.png)
+![Study spots](cozyfocus/Study_spots.png)
+![Study Coach](cozyfocus/Study_Coach.png)
 
 ### Teknisk inblick
 Hela projektkoden är inte publik eftersom projektet är kopplat till kursmoment. Därför visar jag här utvalda kodutdrag och screenshots som demonstrerar en del av mitt arbete.
