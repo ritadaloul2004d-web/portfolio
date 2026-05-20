@@ -14,9 +14,8 @@ Projekt
 
 CozyFocus – Studieplaneringswebb
 
-Webbaserad studie- och produktivitetsapplikation utvecklad i React.
-
-Projektet genomfördes inom kursen Interaction Programming and the Dynamic Web (betyg A).
+CozyFocus är en webbaserad studie- och produktivitetsapp utvecklad i React. Projektet skapades för att hjälpa studenter att planera uppgifter, strukturera veckan och samla flera studieverktyg i ett gränssnitt.
+Projektet genomfördes inom kursen Interaction Programming and the Dynamic Web.
 
 Funktioner
 - Uppgiftshantering med prioritering
@@ -40,6 +39,8 @@ Min roll
 - Implementerade API-integrationer
 - Deltog i kodgranskning och gemensam versionshantering
 - Testning och felsökning
+
+
 
 Koden är inte publik då projektet är kopplat till kursmoment, men kan visas vid begäran.
 
