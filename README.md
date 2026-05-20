@@ -188,13 +188,18 @@ En av de viktigaste delarna i projektet var att koppla ihop flera externa tjäns
 ---
 
 Interactive Game – Kursen Datorteknik (Dtek-V board)
+Interactive Game är ett miniprojekt utvecklat i C för Dtek-V board inom kursen Datorteknik. Projektet byggdes som ett hårdvarunära spel där indata från knappar och switchar kopplades till spelbeteende och visuell återkoppling via LEDs och HEX-display.
 
-Mini-projekt i kursen Datorteknik.
+### Exempel från projektet
+
+Skiss över spelvärlden med rum, nycklar, godis, bossar och utgång.
+![Interactive Game map](miniprojekt/map.jpg)
 
 Teknik
 - C
+- Dtek-V board
 - Lågnivåprogrammering
-- I/O-enheter (knappar, timer, switchar)
+- I/O-enheter (knappar, timer, switchar, LEDs och HEX-display)
 
 Min roll
 - Implementerade spellogik
