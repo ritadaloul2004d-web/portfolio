@@ -12,7 +12,7 @@ LinkedIn: [https://www.linkedin.com/in/rita-daloul-5152722b3](https://www.linked
 
 Projekt
 
-##CozyFocus – Studieplaneringswebb
+###CozyFocus – Studieplaneringswebb
 
 CozyFocus är en webbaserad studie- och produktivitetsapp utvecklad i React. Projektet skapades för att hjälpa studenter att planera uppgifter, strukturera veckan och samla flera studieverktyg i ett gränssnitt.
 Projektet genomfördes inom kursen Interaction Programming and the Dynamic Web.
