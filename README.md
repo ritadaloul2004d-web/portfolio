@@ -12,7 +12,7 @@ LinkedIn: [https://www.linkedin.com/in/rita-daloul-5152722b3](https://www.linked
 
 Projekt
 
-###CozyFocus – Studieplaneringswebb
+CozyFocus – Studieplaneringswebb
 
 CozyFocus är en webbaserad studie- och produktivitetsapp utvecklad i React. Projektet skapades för att hjälpa studenter att planera uppgifter, strukturera veckan och samla flera studieverktyg i ett gränssnitt.
 Projektet genomfördes inom kursen Interaction Programming and the Dynamic Web.
@@ -187,7 +187,7 @@ En av de viktigaste delarna i projektet var att koppla ihop flera externa tjäns
 
 ---
 
-##Interactive Game – Kursen Datorteknik (Dtek-V board)
+Interactive Game – Kursen Datorteknik (Dtek-V board)
 Interactive Game är ett miniprojekt utvecklat i C för Dtek-V board inom kursen Datorteknik. Projektet byggdes som ett hårdvarunära spel där indata från knappar och switchar kopplades till spelbeteende och visuell återkoppling via LEDs och HEX-display.
 
 
