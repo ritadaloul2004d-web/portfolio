@@ -65,6 +65,8 @@ Study motivational Coach:
 
 ### Teknisk inblick
 Hela projektkoden är inte publik eftersom projektet är kopplat till kursmoment. Därför visar jag här utvalda kodutdrag och screenshots som demonstrerar en del av mitt arbete.
+Kodexemplen nedan fokuserar på Google Calendar och React-logik som exempel på mitt arbete i projektet. Utöver detta implementerade jag även funktioner med Mapbox och OpenAI i andra delar av applikationen.
+
 #### 1. Google Calendar – hämta kommande events
 Det här kodexemplet visar hur jag hämtade användarens kommande kalenderhändelser via Google Calendar API med OAuth-token och omvandlade svaret till ett format som appen kan använda.
 ```js
