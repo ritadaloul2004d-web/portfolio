@@ -41,13 +41,26 @@ Min roll
 - Testning och felsökning
 
 ### Exempel från projektet
+
+Login Page:
 ![Inloggning](cozyfocus/Inloggning.png)
+
+Home Page:
 ![Home](cozyfocus/Home.png)
+
+Task Board:
 ![Task board](cozyfocus/Taskboard.png)
 
+Study Plan:
 ![Study plan](cozyfocus/Studyplan.png)
+
+Calendar for upcoming events: 
 ![Google Kalender](cozyfocus/Googlekalender.png)
+
+Study Spots nearby:
 ![Study spots](cozyfocus/Studyspots.png)
+
+Study motivational Coach:
 ![Study Coach](cozyfocus/Studycoach.png)
 
 ### Teknisk inblick
