@@ -190,10 +190,6 @@ En av de viktigaste delarna i projektet var att koppla ihop flera externa tjäns
 Interactive Game – Kursen Datorteknik (Dtek-V board)
 Interactive Game är ett miniprojekt utvecklat i C för Dtek-V board inom kursen Datorteknik. Projektet byggdes som ett hårdvarunära spel där indata från knappar och switchar kopplades till spelbeteende och visuell återkoppling via LEDs och HEX-display.
 
-### Exempel från projektet
-
-Skiss över spelvärlden med rum, nycklar, godis, bossar och utgång.
-![Interactive Game map](miniprojekt/map.jpg)
 
 Teknik
 - C
@@ -205,3 +201,71 @@ Min roll
 - Implementerade spellogik
 - Felsökning av hårdvara och mjukvara
 - Strukturerad problemlösning
+
+### Exempel från projektet
+
+Skiss över spelvärlden med rum, nycklar, godis, bossar och utgång.
+![Interactive Game map](miniprojekt/map.png)
+
+### Teknisk inblick
+
+Hela projektk är inte publik eftersom projektet är kopplat till kursmoment. Därför visar jag här utvalda kodutdrag som demonstrerar delar av mitt arbete.
+
+#### 1. Input från knappar och switchar
+Det här kodexemplet visar hur jag hanterade knapptryckningar och switchar med edge detection för att undvika upprepade triggers när en knapp eller switch hålls inne.
+
+```c
+int pressed_button(void){
+    static unsigned last = 0;
+    unsigned now = BTN1REG & 1u;
+    int edge = (now == 1 && last == 0);
+    last = now;
+    return edge;
+}
+
+int reset_pressed(void){
+    static unsigned last_sw = 0;
+    unsigned sw = SWITCHES & 0x3FFu; 
+    int edge = ((sw & (1u<<7)) && !(last_sw & (1u<<7))); 
+    last_sw = sw;
+    return edge;
+}
+
+unsigned get_switch_rise(void){
+    static unsigned last = 0;
+    unsigned sw   = SWITCHES & 0x3FFu;   
+    unsigned rise = sw & ~last;          
+    last = sw;
+    return rise;
+}
+```
+Detta visar hur jag arbetade med hårdvarunära input och gjorde spelinteraktionen mer stabil och kontrollerad.
+
+#### 2. Visning av spelstatus
+Det här kodexemplet visar hur jag använde LEDs och HEX-display för att visa spelarens status, till exempel liv och antal drag.
+
+```c
+void update_leds(int v)
+{
+    if (v < 0) v = 0;
+    if (v > 10) v = 10;
+    unsigned mask = 0;
+    for (int i = 0; i < v && i < 10; ++i) 
+        mask |= (1u << i);
+    LEDS = mask;
+}
+
+void update_display(int moves){
+    if (moves < 0) 
+        moves = 0;
+    int ones = moves % 10;
+    int tens = (moves/10) % 10;
+    hex_write(0, SEG[ones]);  
+    hex_write(1, SEG[tens]);  
+}
+```
+
+Detta visar hur jag kopplade spelets logik till fysisk output på kortet och arbetade med visualisering av spelstatus i en inbyggd miljö.
+
+### Utmaningar och lärdomar
+En viktig del av projektet var att få mjukvara och hårdvara att samverka på ett stabilt sätt. Jag lärde mig att arbeta med memory-mapped I/O, felsöka låg nivå-kod och strukturera input- och outputhantering i C.
