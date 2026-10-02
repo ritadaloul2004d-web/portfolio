@@ -1,46 +1,49 @@
-Rita Daloul – E-portfolio
+# Rita Daloul – Portfolio
 
-Civilingenjörsstudent i informationsteknik på KTH med intresse för frontend-utveckling och moderna webbapplikationer.
+Civil Engineering student in Information Technology at KTH Royal Institute of Technology in Stockholm, Sweden, with an interest in software development, web applications, APIs and technical problem-solving.
 
----
-
-Kontakt:
-Email: ritadaloul2004.d@gmail.com
-LinkedIn: [https://www.linkedin.com/in/rita-daloul-5152722b3](https://www.linkedin.com/in/rita-daloul-5152722b3/)    
+This repository showcases selected university projects and technical work.
 
 ---
 
-Projekt
+## 🚀 Projects
 
-CozyFocus – Studieplaneringswebb
+### CozyFocus – Study Planning Web Application
 
-CozyFocus är en webbaserad studie- och produktivitetsapp utvecklad i React. Projektet skapades för att hjälpa studenter att planera uppgifter, strukturera veckan och samla flera studieverktyg i ett gränssnitt.
-Projektet genomfördes inom kursen Interaction Programming and the Dynamic Web.
+CozyFocus is a web-based study and productivity application developed in React. The application helps students manage tasks, plan their week and access several study-related tools in one interface.
 
-Funktioner
-- Uppgiftshantering med prioritering
-- Veckoplanering
-- Google Calendar-integration
-- Studieplats-sökning via Mapbox
-- Motivationschatt via OpenAI
-- Firebase-autentisering med användarspecifik lagring
+The project was developed as part of the course *Interaction Programming and the Dynamic Web* at KTH.
 
-Teknik
-- React (Vite)
+#### Features
+
+- Task management with prioritisation
+- Weekly planning
+- Google Calendar integration
+- Study spot search using Mapbox
+- AI-powered study motivation using OpenAI
+- Firebase authentication and user-specific data storage
+
+#### Technologies
+
+- React
 - JavaScript (ES6+)
-- Firebase (Authentication & Firestore)
+- Vite
+- Firebase Authentication & Firestore
 - Google Calendar API
 - Mapbox API
 - OpenAI API
-- Git (versionshantering och kodgranskning)
+- Git
 
-Min roll
-- Utvecklade komponentbaserad frontend
-- Implementerade API-integrationer
-- Deltog i kodgranskning och gemensam versionshantering
-- Testning och felsökning
+#### My Contributions
 
-### Exempel från projektet
+- Developed component-based React frontend
+- Implemented API integrations
+- Worked with authentication and user-specific data
+- Implemented Google Calendar functionality
+- Participated in code reviews and Git-based collaboration
+- Tested and debugged application functionality
+
+### Screenshots
 
 Login Page:
 ![Inloggning](cozyfocus/Inloggning.png)
@@ -63,12 +66,17 @@ Study Spots nearby:
 Study motivational Coach:
 ![Study Coach](cozyfocus/Studycoach.png)
 
-### Teknisk inblick
-Hela projektkoden är inte publik eftersom projektet är kopplat till kursmoment. Därför visar jag här utvalda kodutdrag och screenshots som demonstrerar en del av mitt arbete.
-Kodexemplen nedan fokuserar på Google Calendar och React-logik som exempel på mitt arbete i projektet. Utöver detta implementerade jag även funktioner med Mapbox och OpenAI i andra delar av applikationen.
+---
 
-#### 1. Google Calendar – hämta kommande events
-Det här kodexemplet visar hur jag hämtade användarens kommande kalenderhändelser via Google Calendar API med OAuth-token och omvandlade svaret till ett format som appen kan använda.
+### Technical Highlights
+
+The complete CozyFocus source code is not public because the project was developed as part of a university course. The examples below demonstrate selected parts of my implementation.
+
+<details>
+<summary><strong>Google Calendar – Fetch upcoming events</strong></summary>
+
+This example shows how I retrieved upcoming calendar events through the Google Calendar API using an OAuth access token, handled API errors and transformed the response into data used by the application.
+
 ```js
 const GCAL_BASE_URL = "https://www.googleapis.com/calendar/v3/calendars";
 export function fetchUpcomingEvents(options = {}, accessToken, calendarId = "primary") {
@@ -100,10 +108,11 @@ export function fetchUpcomingEvents(options = {}, accessToken, calendarId = "pri
     );
 }
 ```
-Detta visar att jag arbetade med autentisering, API-anrop, felhantering och datarensning innan informationen skickades vidare till gränssnittet.
+This demonstrates API communication, OAuth authentication, error handling and data transformation.
 
-#### 2. Google Calendar – skapa study block
-Det här kodexemplet visar hur användaren kan skapa ett nytt studiepass direkt i sin Google Calendar från appen.
+</details> <details> <summary><strong>Google Calendar – Create study blocks</strong></summary>
+
+The application also allows users to create study sessions directly in their Google Calendar.
 
 ```js
 export function createStudyBlock(eventData, accessToken, calendarId = "primary") {
@@ -141,10 +150,11 @@ export function createStudyBlock(eventData, accessToken, calendarId = "primary")
     }));
 }
 ```
-Detta visar att jag byggde funktionalitet där användaren inte bara läser data, utan också skapar nya kalenderhändelser genom appen.
+This demonstrates authenticated API requests, request validation, error handling and creating data through an external API.
 
-#### 3. React-logik – koppling mellan model och view
-Det här kodexemplet visar hur jag kopplade användarinteraktion i gränssnittet till logiken för att ladda kalenderdata och skapa study blocks.
+</details> <details> <summary><strong>React – Calendar presentation logic</strong></summary>
+
+This example shows how React, MobX and the application model were connected to handle loading states, errors and user interactions.
 
 ```js
 export const CalendarPresenter = observer(function CalendarPresenter({ model }) {
@@ -180,39 +190,58 @@ export const CalendarPresenter = observer(function CalendarPresenter({ model }) 
   );
 });
 ```
-Detta visar hur jag arbetade med React, MobX och presenter/view-struktur för att hantera laddningstillstånd, fel och användarinteraktion på ett tydligt sätt.
+This demonstrates React component logic, MobX state handling, asynchronous operations, loading states and error handling.
 
-### Utmaningar och lärdomar
-En av de viktigaste delarna i projektet var att koppla ihop flera externa tjänster i ett sammanhängande användarflöde. Jag lärde mig att arbeta med OAuth, hantera asynkrona API-anrop, rensa och strukturera data samt koppla detta till ett tydligt React-gränssnitt.
+</details>
+Key Technical Experience
+
+Through CozyFocus, I gained practical experience with:
+
+- REST API integration
+- OAuth-based authentication
+- Asynchronous JavaScript
+- Error handling
+- Data transformation
+- React component architecture
+- MobX
+- Firebase
+- Third-party APIs
+- Git-based collaboration
 
 ---
 
-Interactive Game – Kursen Datorteknik (Dtek-V board)
-Interactive Game är ett miniprojekt utvecklat i C för Dtek-V board inom kursen Datorteknik. Projektet byggdes som ett hårdvarunära spel där indata från knappar och switchar kopplades till spelbeteende och visuell återkoppling via LEDs och HEX-display.
+🎮 Interactive Game – Embedded Systems
 
+Interactive Game is a hardware-oriented game developed in C for the Dtek-V board as part of a computer engineering course at KTH.
 
-Teknik
-- C
-- Dtek-V board
-- Lågnivåprogrammering
-- I/O-enheter (knappar, timer, switchar, LEDs och HEX-display)
+The project connected physical inputs such as buttons and switches to game logic and provided visual feedback through LEDs and HEX displays.
 
-Min roll
-- Implementerade spellogik
-- Felsökning av hårdvara och mjukvara
-- Strukturerad problemlösning
+Technologies
+C
+Dtek-V board
+Embedded systems
+Memory-mapped I/O
+Hardware interaction
+Buttons and switches
+LEDs and HEX displays
+My Contributions
+Implemented game logic
+Implemented hardware input handling
+Worked with memory-mapped I/O
+Implemented LED and HEX display output
+Debugged hardware and software interaction
 
-### Exempel från projektet
+### Game Map 
 
-Skiss över spelvärlden med rum, nycklar, godis, bossar och utgång.
+Sketch of the game world showing rooms, keys, treats, bosses, and the exit.
 ![Interactive Game map](miniprojekt/map.png)
 
-### Teknisk inblick
+### Technical Highlights
 
-Hela projektk är inte publik eftersom projektet är kopplat till kursmoment. Därför visar jag här utvalda kodutdrag som demonstrerar delar av mitt arbete.
+The entire project is not public, as it is linked to specific course components. Therefore, I am presenting selected code snippets here that demonstrate parts of my work.
 
-#### 1. Input från knappar och switchar
-Det här kodexemplet visar hur jag hanterade knapptryckningar och switchar med edge detection för att undvika upprepade triggers när en knapp eller switch hålls inne.
+#### 1. Button and switch input
+The following example uses edge detection to detect button and switch state changes rather than continuously triggering while an input is held.
 
 ```c
 int pressed_button(void){
@@ -239,10 +268,10 @@ unsigned get_switch_rise(void){
     return rise;
 }
 ```
-Detta visar hur jag arbetade med hårdvarunära input och gjorde spelinteraktionen mer stabil och kontrollerad.
+This demonstrates low-level input handling and edge detection for embedded hardware.
 
-#### 2. Visning av spelstatus
-Det här kodexemplet visar hur jag använde LEDs och HEX-display för att visa spelarens status, till exempel liv och antal drag.
+#### 2. LED and HEX display output
+The game used LEDs and HEX displays to provide visual feedback such as player status and number of moves.
 
 ```c
 void update_leds(int v)
@@ -265,7 +294,24 @@ void update_display(int moves){
 }
 ```
 
-Detta visar hur jag kopplade spelets logik till fysisk output på kortet och arbetade med visualisering av spelstatus i en inbyggd miljö.
+This demonstrates how software logic was connected to physical output devices on the board.
 
-### Utmaningar och lärdomar
-En viktig del av projektet var att få mjukvara och hårdvara att samverka på ett stabilt sätt. Jag lärde mig att arbeta med memory-mapped I/O, felsöka låg nivå-kod och strukturera input- och outputhantering i C.
+### What I Learned
+This project gave me practical experience with:
+
+Low-level C programming
+Memory-mapped I/O
+Embedded systems
+Hardware interaction
+Input and output handling
+Debugging software and hardware interaction
+
+### 🚌 SL Table – Web-Based Public Transport Application
+SL Table was a group project developed at KTH as part of a web development course.
+
+The project involved developing a web-based public transport application and coordinating different parts of the system as a group.
+
+### My Contributions
+Contributed to backend development
+Worked with integration between different parts of the application
+Collaborated with other students throughout the development process
