@@ -72,8 +72,7 @@ Study motivational Coach:
 
 The complete CozyFocus source code is not public because the project was developed as part of a university course. The examples below demonstrate selected parts of my implementation.
 
-<details>
-<summary><strong>Google Calendar – Fetch upcoming events</strong></summary>
+#### Google Calendar – Fetch upcoming events
 
 This example shows how I retrieved upcoming calendar events through the Google Calendar API using an OAuth access token, handled API errors and transformed the response into data used by the application.
 
@@ -110,7 +109,7 @@ export function fetchUpcomingEvents(options = {}, accessToken, calendarId = "pri
 ```
 This demonstrates API communication, OAuth authentication, error handling and data transformation.
 
-</details> <details> <summary><strong>Google Calendar – Create study blocks</strong></summary>
+####  Google Calendar – Create study blocks
 
 The application also allows users to create study sessions directly in their Google Calendar.
 
@@ -152,7 +151,7 @@ export function createStudyBlock(eventData, accessToken, calendarId = "primary")
 ```
 This demonstrates authenticated API requests, request validation, error handling and creating data through an external API.
 
-</details> <details> <summary><strong>React – Calendar presentation logic</strong></summary>
+#### React – Calendar presentation logic
 
 This example shows how React, MobX and the application model were connected to handle loading states, errors and user interactions.
 
@@ -192,8 +191,8 @@ export const CalendarPresenter = observer(function CalendarPresenter({ model }) 
 ```
 This demonstrates React component logic, MobX state handling, asynchronous operations, loading states and error handling.
 
-</details>
-Key Technical Experience
+
+### Key Technical Experience
 
 Through CozyFocus, I gained practical experience with:
 
@@ -210,26 +209,27 @@ Through CozyFocus, I gained practical experience with:
 
 ---
 
-🎮 Interactive Game – Embedded Systems
+### 🎮 Interactive Game – Embedded Systems
 
 Interactive Game is a hardware-oriented game developed in C for the Dtek-V board as part of a computer engineering course at KTH.
 
 The project connected physical inputs such as buttons and switches to game logic and provided visual feedback through LEDs and HEX displays.
 
-Technologies
-C
-Dtek-V board
-Embedded systems
-Memory-mapped I/O
-Hardware interaction
-Buttons and switches
-LEDs and HEX displays
-My Contributions
-Implemented game logic
-Implemented hardware input handling
-Worked with memory-mapped I/O
-Implemented LED and HEX display output
-Debugged hardware and software interaction
+#### Technologies
+- C
+- Dtek-V board
+- Embedded systems
+- Memory-mapped I/O
+- Hardware interaction
+- Buttons and switches
+- LEDs and HEX displays
+
+#### My Contributions
+- Implemented game logic
+- Implemented hardware input handling
+- Worked with memory-mapped I/O
+- Implemented LED and HEX display output
+- Debugged hardware and software interaction
 
 ### Game Map 
 
@@ -299,12 +299,12 @@ This demonstrates how software logic was connected to physical output devices on
 ### What I Learned
 This project gave me practical experience with:
 
-Low-level C programming
-Memory-mapped I/O
-Embedded systems
-Hardware interaction
-Input and output handling
-Debugging software and hardware interaction
+- Low-level C programming
+- Memory-mapped I/O
+- Embedded systems
+- Hardware interaction
+- Input and output handling
+- Debugging software and hardware interaction
 
 ### 🚌 SL Table – Web-Based Public Transport Application
 SL Table was a group project developed at KTH as part of a web development course.
@@ -312,6 +312,6 @@ SL Table was a group project developed at KTH as part of a web development cours
 The project involved developing a web-based public transport application and coordinating different parts of the system as a group.
 
 ### My Contributions
-Contributed to backend development
-Worked with integration between different parts of the application
-Collaborated with other students throughout the development process
+- Contributed to backend development
+- Worked with integration between different parts of the application
+- Collaborated with other students throughout the development process
